@@ -1,0 +1,26 @@
+body {
+	margin: 0 auto;	
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: grey;
+    text-align: right;
+}
+
+ul a:visited {
+	color: pink;
+}
+
+div	{
+	display: inline-block;
+	position: relative;
+	/*width: 150px;*/
+	float: left;
+}
+
+canvas { 
+
+}
