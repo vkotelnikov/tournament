@@ -7,6 +7,7 @@
           var host = teams[info['host']]+': '+info['host_score'];
           var guest = teams[info['guest']]+': '+info['guest_score'];
           var winner = teams[info['winner']];
+          
           ctx.font = '12px serif';
           ctx.fillText(host, 13, 30);
           ctx.fillText(guest, 13, 70);
