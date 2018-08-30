@@ -14,7 +14,7 @@ $query = "INSERT INTO Teams(name) VALUES ('".mysqli_real_escape_string($db, $_PO
 
 if(mysqli_query($db, $query))
 	{
-		header('Location:http://'.$_SERVER_['DOCUMENT_ROOT'].'/tournament/manager.php');
+		header('Location:manager.php');
 	}
 else
 	{
