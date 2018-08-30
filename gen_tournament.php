@@ -4,11 +4,9 @@ require('connect_db.php');
 $query = 'SELECT * FROM `Teams` LIMIT '.mysqli_real_escape_string($db, $_POST['count']).';';
 $result = mysqli_query($db, $query);
 $teams = mysqli_fetch_all($result);
-// echo count($teams).'   '.$_POST['count'];
 $i=0;
-if ($_POST['count'] <= count($teams)) {
+if (intval($_POST['count']) <= count($teams)) {
 	mysqli_query($db, 'DELETE FROM `Matches`;');
-// var_dump($teams);
 	while ($i < count($teams)) {
 		$score_host = rand(0,10);
 		$score_guest = rand(0,10);
@@ -24,7 +22,6 @@ if ($_POST['count'] <= count($teams)) {
 	$i=2;
 	$j=0;
 
-		// var_dump(log(count($teams), 2));
 	while ($i <= log(count($teams), 2)) {
 		$query = 'SELECT * FROM `Matches` WHERE `round` = '.($i-1).';';
 		$result = mysqli_query($db, $query);
