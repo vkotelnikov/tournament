@@ -35,7 +35,8 @@
 	<h3>Сгенерировать турнир</h3>
 	<form action="gen_tournament.php" method="POST">
 		<label>Количество команд</label>
-		<input type="number" name="count" min="4" step="4" required>
+		<input type="number" name="count" min="4" step="4">
+		<input type="submit" name="gen_step" value="Сгенерировать 1 раунд">
 		<input type="submit" name="gen" value="Сгенерировать">
 	</form>
 	<form action="gen_tournament.php" method="POST">
