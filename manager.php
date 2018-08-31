@@ -38,6 +38,9 @@
 		<input type="number" name="count" min="4" step="4" required>
 		<input type="submit" name="gen" value="Сгенерировать">
 	</form>
+	<form action="gen_tournament.php" method="POST">
+		<input type="submit" name="del" value="Очистить">
+	</form>
 	</div>
 </body>
 </html>
